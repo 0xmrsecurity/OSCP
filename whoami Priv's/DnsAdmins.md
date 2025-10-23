@@ -3,7 +3,9 @@ DnsAdmins is a Windows group specifically for administering DNS servers in an Ac
 
 # Steps
 1. Create a dll binary and upload it
-
+2. inject dll
+3. start smb server and listner
+4. stop or start service
 
 
 # create dll with msfvenom
