@@ -3,7 +3,7 @@ On a Windows Server, BUILTIN\Server Operators is a local built-in group. Its int
 
 Think of them as the "senior janitorial staff" or "data center technicians" for a specific server. They aren't allowed to change the building's blueprints (domain policy), but they have the keys to every room (server) and can control all the equipment inside.
 
-# Step By Step
+# Steps
 1. Transfer the nc64.exe Binary.
 2. vss service check.
 3. Configure the command Execution.
