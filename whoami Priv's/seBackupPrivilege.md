@@ -8,7 +8,7 @@ we can restore the backup files that contains the All system user NTLM Hash
 4. save the files
 5. Download it using the smbserver
 
-# Create viper.dsh file
+# Create viper.dsh file and paste this
 ```language
 set context persistent nowriters
 add volume c: alias viper
