@@ -28,6 +28,12 @@ password : < paste the password here >
 
 # Reset the password  and login it 
 ```
+# Your are know Ready to Start and Stop the Bloodhound
+```language
+docker-compose up -d
+
+docker-compose down
+```
 # NetExec loot
 ```language
 nxc ldap $target -u $username -p $password --bloodhound --collection All --dns-server $target
