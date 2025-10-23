@@ -30,9 +30,9 @@ password : < paste the password here >
 ```
 # Your are know Ready to Start and Stop the Bloodhound
 ```language
-docker-compose up -d
+docker-compose up -d  #start it
 
-docker-compose down
+docker-compose down  # stop it
 ```
 # NetExec loot
 ```language
