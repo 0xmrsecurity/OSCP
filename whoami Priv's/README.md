@@ -7,7 +7,9 @@ https://github.com/0xmrsecurity/OSCP/blob/main/whoami%20Priv's/Server_Operators.
 https://github.com/0xmrsecurity/OSCP/blob/main/whoami%20Priv's/SeImpersonatePrivilege.md
 3. SeManageVolumePrivilege  ->
 https://github.com/0xmrsecurity/OSCP/blob/main/whoami%20Priv's/SeManageVolumePrivilege.md
-4. seBackupPrivilege  ->
+4. seBackupPrivilege    ->
 https://github.com/0xmrsecurity/OSCP/blob/main/whoami%20Priv's/seBackupPrivilege.md
-5. seRestorePrivilege ->
+5. seRestorePrivilege     ->
 https://github.com/0xmrsecurity/OSCP/blob/main/whoami%20Priv's/seBackupPrivilege.md
+6. DNSAdmin      ->
+https://github.com/0xmrsecurity/OSCP/blob/main/whoami%20Priv's/DnsAdmins.md
