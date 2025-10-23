@@ -1,4 +1,4 @@
-# Bloodhound loot Using Rusthound , bloodhound-python and Sharphound
+# Bloodhound loot Using Rusthound , bloodhound-python , Sharphound.exe and NetExec.
 Using this tool you can load the data into the bloodhound to see the visual attack path.
 # BloodHound Step up 
 ```language
@@ -27,4 +27,22 @@ username : admin
 password : < paste the password here >
 
 # Reset the password  and login it 
+```
+# NetExec loot
+```language
+nxc ldap $target -u $username -p $password --bloodhound --collection All --dns-server $target
+```
+# RustHound loot
+```language
+rusthound-ce --domain $domain -u $user -p $pass --zip -c All
+
+rusthound-ce -d $domain -f $full_domain -u $user -p $pass -k  --old-bloodhound  --adcs --zip -c All
+```
+# Bloodhound-Python
+```language
+faketime  "$(ntpdate -q $full_domain | cut -d ' ' -f 1,2)" bloodhound-python -d $domain -u $user -p $pass -ns $ip -dc $full_domain -c All --zip
+```
+# SharpHound.exe
+```language.exe
+.\sharpHound.exe -s -c all
 ```
