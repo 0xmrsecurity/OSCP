@@ -7,7 +7,7 @@ Think of it as being the "storage system administrator" - you can't change user 
 1. Download the Exploit Binary and upload it
 2. Create a temp directoty.
 3. Export the Certificate and Download it
-4. After perform a forge ticker
+4. After perform a forge ticket attack
 5. Get the TGT and login it
 
 # Download it
