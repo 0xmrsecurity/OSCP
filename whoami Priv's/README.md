@@ -9,3 +9,5 @@ https://github.com/0xmrsecurity/OSCP/blob/main/whoami%20Priv's/SeImpersonatePriv
 https://github.com/0xmrsecurity/OSCP/blob/main/whoami%20Priv's/SeManageVolumePrivilege.md
 4. seBackupPrivilege  ->
 https://github.com/0xmrsecurity/OSCP/blob/main/whoami%20Priv's/seBackupPrivilege.md
+5. seRestorePrivilege ->
+https://github.com/0xmrsecurity/OSCP/blob/main/whoami%20Priv's/seBackupPrivilege.md
