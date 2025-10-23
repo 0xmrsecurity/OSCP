@@ -40,6 +40,8 @@ rusthound-ce -d $domain -f $full_domain -u $user -p $pass -k  --old-bloodhound  
 ```
 # Bloodhound-Python
 ```language
+bloodhound-python -d $domain -u $user -p $pass -ns $ip -dc $full_domain -c All --zip
+
 faketime  "$(ntpdate -q $full_domain | cut -d ' ' -f 1,2)" bloodhound-python -d $domain -u $user -p $pass -ns $ip -dc $full_domain -c All --zip
 ```
 # SharpHound.exe
