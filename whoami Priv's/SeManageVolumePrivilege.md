@@ -24,6 +24,9 @@ cd C:\tmp
 ```
 # Export certificate and Download 
 ```language
+certutil -exportPFX my "CA Name" C:\tmp\out.pfx
+
+For Example:-
 certutil -exportPFX my "Certificate-LTD-CA" C:\tmp\get.pfx
 
 download get.pfx
