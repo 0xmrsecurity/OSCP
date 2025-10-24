@@ -5,12 +5,18 @@ If the file contain the binary password, like this :- 01019193108410018371461067
 ```
 # You can Decrypt it using the Powershell Manuall and Automate Ways:-
 
-# Manuall Way
+# (1) Manuall Way
 Make sure you paste the write Encoded password and username.
 ```language
 $pwd = ConvertTo-SecureString  <encoded password>
 $cred = New-Object System.Management.Automation.PSCredential -ArgumentList "user_name",$pwd    # Grap the username from the xml file.
 $cred.GetNetworkCredential().password
+```
+# (2) Manuall Way
+```language
+$secureString = ConvertTo-SecureString "<encrypted_binary>"
+$credential = New-Object PSCredential("username", $secureString)
+$plainTextPassword = $credential.GetNetworkCredential().Password
 ```
 # Automate Way
 ```language
