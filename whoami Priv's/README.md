@@ -13,3 +13,5 @@ https://github.com/0xmrsecurity/OSCP/blob/main/whoami%20Priv's/seBackupPrivilege
 https://github.com/0xmrsecurity/OSCP/blob/main/whoami%20Priv's/seBackupPrivilege.md
 6. DNSAdmin      ->
 https://github.com/0xmrsecurity/OSCP/blob/main/whoami%20Priv's/DnsAdmins.md
+7. SeDebugPrivillges  ->
+https://github.com/0xmrsecurity/OSCP/blob/main/whoami%20Priv's/seDebug.md
