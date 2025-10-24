@@ -1,9 +1,9 @@
 # Decode the Xml password 
-```language
 PSCredential XML Decryption is the process of extracting and converting securely stored credentials from serialized PowerShell objects in XML format back to plaintext authentication tokens.
-```
+```language
 If the file contain the binary password, like this :- 0101919310841001837146106741741069169491893010101100101001010010010110100101016471551646101808181838
-You can Decrypt it using the Powershell Manuall way and Automate Way:-
+```
+# You can Decrypt it using the Powershell Manuall way and Automate Way:-
 
 # Manuall Way
 ```language
