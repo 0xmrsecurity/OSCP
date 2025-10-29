@@ -1,11 +1,9 @@
 # DpApi attack  
 DPAPI is Windows' built-in encryption system that protects things like saved passwords and Wi-Fi keys. Attackers don't break the encryption - they steal the keys to decrypt it.
 
-# Steps
+# Verify it 
 ```language
-1. Get the SID of the user
-2. Grab the important files that is located in the appdata of user
-3. Exract it offline .
+cmdkey /list
 ```
 # Get the sid
 ```language
