@@ -52,5 +52,5 @@ faketime  "$(ntpdate -q $full_domain | cut -d ' ' -f 1,2)" bloodhound-python -d 
 ```
 # SharpHound.exe
 ```language.exe
-.\sharpHound.exe -s -c all
+.\sharpHound.exe -s -c all,gpolocalgroup
 ```
